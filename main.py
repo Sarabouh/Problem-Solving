@@ -20,9 +20,9 @@ def main():
     dist = d.Distance()
 
     img_out, h_matrix = homography.homography([141, 131], [480, 159], [493, 630], [64, 601], image)
-    print(h)
+    print(h_matrix)
 
-    # dist.fixjson("Research/yoloJson.json", "Research/yoloJson2.json")
+    # dist.fixjson("QIL/yoloJson.json", "QIL/yoloJson2.json")
 
     objects = dist.getObj(current + "/yoloJson2.json")
     distances = dist.calculateDistance(objects)
