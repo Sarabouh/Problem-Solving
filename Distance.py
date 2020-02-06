@@ -46,7 +46,7 @@ class Distance:
         return dDist
 
     def drawlines(self,img, dDict, oDict):
-        lineThickness = 1
+        lineThickness = 3
         for elt in oDict.keys():
             for j in oDict.keys():
                 if elt != j:
