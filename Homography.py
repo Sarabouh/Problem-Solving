@@ -1,5 +1,6 @@
 import cv2
 import numpy as np
+import os
 
 class Homography:
 
@@ -11,22 +12,27 @@ class Homography:
         return im_dst
 
     def homography(self, a,b,c,d,im_src):
+        current = "/".join(os.path.dirname(__file__).split("/"))
+        input_path = current + "/input/"
 
         # Four corners of the item in source image
         pts_src = np.array([a,b,c,d])
 
         # Read destination image.
-        im_dst = self.make_dstimg(im_src)
+        #im_dst = self.make_dstimg(im_src)
+        im_dst = cv2.imread(input_path + "desti.jpg")
 
         # Four corners of the item in destination image.
-        #pts_dst = np.array([[318, 256],[534, 372],[316, 670],[73, 473]])
-        pts_dst = np.array([[0, 0],[im_dst.shape[0], 0], [im_dst.shape[0], im_dst.shape[1]] ,[0, im_dst.shape[1]] ])
+        pts_dst = np.array([[842, 418],[1696, 418],[1696, 2933],[841, 2933]])
+        #pts_dst = np.array([[0, 0],[im_dst.shape[0], 0], [im_dst.shape[0], im_dst.shape[1]] ,[0, im_dst.shape[1]] ])
+        print('dest shape========', im_dst.shape[0]," " ,im_dst.shape[1])
 
         # Calculate Homography
         h, status = cv2.findHomography(pts_src, pts_dst)
 
         # Warp source image to destination based on homography
         im_out = cv2.warpPerspective(im_src, h, (im_dst.shape[1], im_dst.shape[0]))
+
         return im_out, h
 
 
