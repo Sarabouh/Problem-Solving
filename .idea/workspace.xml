@@ -4,8 +4,11 @@
     <option name="SCOPE_TYPE" value="3" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="327c632e-fd25-4d89-b96b-db6947079019" name="Default Changelist" comment="" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <list default="true" id="327c632e-fd25-4d89-b96b-db6947079019" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/Research.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Research.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -18,10 +21,20 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1SIky87aqdQG85MA8by4fDfvWEk" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/input" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -35,18 +48,6 @@
       <recent name="$PROJECT_DIR$/input" />
       <recent name="$PROJECT_DIR$" />
     </key>
-  </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
   </component>
   <component name="RunManager" selected="Python.main">
     <configuration name="Distance" type="PythonConfigurationType" factoryName="Python" temporary="true">
@@ -168,6 +169,18 @@
       </list>
     </recent_temporary>
   </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -193,10 +206,34 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
-  <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Research$Homography.coverage" NAME="Homography Coverage Results" MODIFIED="1578649674127" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/.." />
-    <SUITE FILE_PATH="coverage/Research$test.coverage" NAME="test Coverage Results" MODIFIED="1571450669767" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/.." />
-    <SUITE FILE_PATH="coverage/Research$Distance.coverage" NAME="Distance Coverage Results" MODIFIED="1573078511219" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/.." />
-    <SUITE FILE_PATH="coverage/Research$main.coverage" NAME="main Coverage Results" MODIFIED="1578665148843" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/.." />
+  <component name="WindowStateProjectService">
+    <state x="776" y="311" width="424" height="484" key="FileChooserDialogImpl" timestamp="1581014544794">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="776" y="311" width="424" height="484" key="FileChooserDialogImpl/67.27.1853.1053/1920.0.900.1440@67.27.1853.1053" timestamp="1581014544794" />
+    <state width="1377" height="260" key="GridCell.Tab.0.bottom" timestamp="1581020219471">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state width="1377" height="260" key="GridCell.Tab.0.bottom/67.27.1853.1053/1920.0.900.1440@67.27.1853.1053" timestamp="1581020219471" />
+    <state width="1377" height="260" key="GridCell.Tab.0.center" timestamp="1581020219471">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state width="1377" height="260" key="GridCell.Tab.0.center/67.27.1853.1053/1920.0.900.1440@67.27.1853.1053" timestamp="1581020219471" />
+    <state width="1377" height="260" key="GridCell.Tab.0.left" timestamp="1581020219471">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state width="1377" height="260" key="GridCell.Tab.0.left/67.27.1853.1053/1920.0.900.1440@67.27.1853.1053" timestamp="1581020219471" />
+    <state width="1377" height="260" key="GridCell.Tab.0.right" timestamp="1581020219471">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state width="1377" height="260" key="GridCell.Tab.0.right/67.27.1853.1053/1920.0.900.1440@67.27.1853.1053" timestamp="1581020219471" />
+    <state x="482" y="188" key="SettingsEditor" timestamp="1579112759786">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="482" y="188" key="SettingsEditor/67.27.1853.1053/1920.0.900.1440@67.27.1853.1053" timestamp="1579112759786" />
+    <state x="649" y="380" key="com.intellij.ide.util.TipDialog" timestamp="1580752648807">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="649" y="380" key="com.intellij.ide.util.TipDialog/67.27.1853.1053/1920.0.900.1440@67.27.1853.1053" timestamp="1580752648807" />
   </component>
 </project>
