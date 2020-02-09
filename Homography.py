@@ -20,10 +20,10 @@ class Homography:
 
         # Read destination image.
         #im_dst = self.make_dstimg(im_src)
-        im_dst = cv2.imread(input_path + "desti.jpg")
+        im_dst = cv2.imread(input_path + "destt.png")
 
         # Four corners of the item in destination image.
-        pts_dst = np.array([[842, 418],[1696, 418],[1696, 2933],[841, 2933]])
+        pts_dst = np.array([[841, 2933],[839, 415], [698, 415],[1694, 2933]])
         #pts_dst = np.array([[0, 0],[im_dst.shape[0], 0], [im_dst.shape[0], im_dst.shape[1]] ,[0, im_dst.shape[1]] ])
         print('dest shape========', im_dst.shape[0]," " ,im_dst.shape[1])
 

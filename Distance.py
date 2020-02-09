@@ -60,7 +60,6 @@ class Distance:
         hDict=oDict
         copy = oDict
         one = np.ones(1, dtype=np.float32)
-        print(one)
         for elt in oDict.keys():
             copy[elt][1] = np.append(copy[elt][1], one)
             hDict[elt][1]=np.dot(hmatrix, copy[elt][1])
