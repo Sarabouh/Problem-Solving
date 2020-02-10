@@ -63,6 +63,18 @@ class Distance:
         for elt in oDict.keys():
             copy[elt][1] = np.append(copy[elt][1], one)
             hDict[elt][1]=np.dot(hmatrix, copy[elt][1])
+            hDict[elt][1] = hDict[elt][1]/hDict[elt][1][2]
             hDict[elt][1] = np.delete(hDict[elt][1], 2)
+        return hDict
+
+    def transformdict2(self, oDict, hmatrix):
+        hDict=oDict
+        copy = oDict
+
+        for elt in oDict.keys():
+            print(copy[elt][1])
+            copy[elt][1] = cv2.convertPointsToHomogeneous(copy[elt][1])
+            hDict[elt][1]=np.dot(hmatrix, copy[elt][1])
+            hDict[elt][1] = cv2.convertPointsFromHomogeneous(hDict[elt][1])
         return hDict
 

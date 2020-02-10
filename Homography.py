@@ -20,15 +20,21 @@ class Homography:
 
         # Read destination image.
         #im_dst = self.make_dstimg(im_src)
-        im_dst = cv2.imread(input_path + "destt.png")
+        im_dst = cv2.imread(input_path + "dst.jpg")
 
         # Four corners of the item in destination image.
-        pts_dst = np.array([[841, 2933],[839, 415], [698, 415],[1694, 2933]])
-        #pts_dst = np.array([[0, 0],[im_dst.shape[0], 0], [im_dst.shape[0], im_dst.shape[1]] ,[0, im_dst.shape[1]] ])
+        # dst0
+        #pts_dst = np.array([[167, 26], [644, 20], [632, 334], [182, 337]])
+
+        #dst1
+        #pts_dst = np.array([[140, 316],[1112, 316], [1105, 691],[140, 809]])
+
+        #dst2
+        pts_dst = np.array([[0, 0],[im_dst.shape[0], 0], [im_dst.shape[0], im_dst.shape[1]] ,[0, im_dst.shape[1]] ])
         print('dest shape========', im_dst.shape[0]," " ,im_dst.shape[1])
 
         # Calculate Homography
-        h, status = cv2.findHomography(pts_src, pts_dst)
+        h, status = cv2.findHomography(pts_src, pts_dst, cv2.RANSAC, 4)
 
         # Warp source image to destination based on homography
         im_out = cv2.warpPerspective(im_src, h, (im_dst.shape[1], im_dst.shape[0]))
